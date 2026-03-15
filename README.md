@@ -1,5 +1,4 @@
-This is a professional-grade README designed for your GitHub or engineering portfolio. It highlights the high-performance aspects of your flight computer—like the hardware-timed executive—which is exactly what recruiters at JPL or SpaceX look for.
-ESP32-Avionics-Executive: High-Fidelity Flight Computer
+
 
 This project is a real-time avionics suite built for high-power sounding rockets. It utilizes an ESP32 and an MPU6050 IMU to handle flight logic, sensor fusion, and safety protocols within a deterministic, interrupt-driven environment.
 🚀 System Architecture
