@@ -1,7 +1,7 @@
 
 
 This project is a real-time avionics suite built for high-power sounding rockets. It utilizes an ESP32 and an MPU6050 IMU to handle flight logic, sensor fusion, and safety protocols within a deterministic, interrupt-driven environment.
-🚀 System Architecture
+System Architecture
 
 Unlike standard "Arduino-style" loops, this system utilizes a Hardware Timer Interrupt to maintain a strict 400Hz frequency (2.5ms intervals). This ensures deterministic execution of flight logic, which is critical for stability and control.
 Key Technical Features:
@@ -19,7 +19,7 @@ Component	Pin (ESP32)	Purpose
 MPU6050	SDA (21), SCL (22)	6-DOF Inertial Measurement
 RED LED	GPIO 2	Parachute Deployment / Tilt Alarm
 Resistor	220 Ω	Current Limiting
-🧠 Logic & Signal Processing
+Logic & Signal Processing
 Digital Filtering
 
 To handle the "noisy" environment of a rocket motor, the system processes raw Z-axis acceleration through a low-pass EMA filter:
@@ -59,3 +59,4 @@ Based on simulation data, the executive maintains a significant timing margin:
     Observe the "Flight Executive Heartbeat" and real-time state transitions.
 
     Note: This project was developed as part of the Electrical Engineering curriculum at Santa Clara University (SCU), focusing on real-time systems and avionics safety.
+    
